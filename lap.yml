@@ -1,0 +1,21 @@
+packages:
+  - git
+  - python3
+  - pip
+
+apps:
+  - vscode
+
+scripts:
+  - description: "Install Telebot library"
+    run: |
+      pip install telebot flask aiogram pyTelegramBotapi python-telegram-bot 
+
+  - description: "Give execute permissions to all files"
+    run: |
+      chmod +x *
+
+  - description: "Run Python script"
+    run: |
+      python3 v.py
+      
